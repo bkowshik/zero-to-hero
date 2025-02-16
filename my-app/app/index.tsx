@@ -1,24 +1,28 @@
-import { Button, Text, View, Image, ScrollView, TextInput, StyleSheet } from "react-native";
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+import { Link } from 'expo-router';
 
-export default function Index() {
+const Index = () => {
   return (
-    <ScrollView contentContainerStyle={styles.contentContainer}>
-      <View style={styles.container}>
-        <Text>Please fill the form below and hit submit.</Text>
-        <TextInput placeholder="Enter some text" style={{ width: 200, height: 40, margin: 10 }} />
-        <Button title="Submit" onPress={() => alert('Form submitted successfully!')} />
-        <Image source={require('@/assets/images/react-logo.png')} />
-      </View>
-    </ScrollView >
+    <View style={styles.container}>
+      <Text style={styles.text}>Index Page</Text>
+      <Link href={'/details'}>Go to details</Link>
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  contentContainer: {
-    flex: 1,
-  },
   container: {
-    backgroundColor: '#160225',
     flex: 1,
-  }
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#aaffff',
+  },
+  text: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
 });
+
+export default Index;
