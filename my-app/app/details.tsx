@@ -27,14 +27,13 @@ const styles = StyleSheet.create({
     image: {
         width: 200,
         height: 200,
-        borderRadius: 100,
-        marginBottom: 20,
+        marginBottom: 16,
     },
     title: {
-        fontSize: 28,
+        fontSize: 32,
         fontWeight: 'bold',
         color: '#333',
-        marginBottom: 10,
+        marginBottom: 8,
     },
     description: {
         fontSize: 16,
