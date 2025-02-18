@@ -7,4 +7,5 @@ Ref: https://galaxies.dev/mission/zero-to-hero
 
 ```bash
 npx create-expo-app@latest my-app
+npx create-expo-app@latest starwars
 ```
