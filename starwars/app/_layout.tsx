@@ -4,26 +4,11 @@ import { Ionicons } from "@expo/vector-icons";
 
 export default function RootLayout() {
 	return (
-		<Tabs screenOptions={{
-			headerShadowVisible: false,
-			headerStyle: {
-				backgroundColor: COLORS.background
-			},
-			headerTintColor: COLORS.text,
-			headerTitleStyle: {
-				color: COLORS.text
-			},
-			tabBarStyle: {
-				backgroundColor: COLORS.background,
-				borderTopColor: COLORS.text,
-				borderTopWidth: 1
-			},
-			tabBarActiveTintColor: COLORS.text,
-			tabBarInactiveTintColor: COLORS.inactive,
-		}}>
+		<Tabs>
 			<Tabs.Screen name="films" options={{
 				title: 'All Films',
 				tabBarLabel: "Films",
+				headerShown: false,
 				tabBarIcon: ({ color, size }) => (
 					<Ionicons name="film-outline" size={size} color={color} />
 				),
